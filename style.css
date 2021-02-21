@@ -1,0 +1,36 @@
+#images-div{
+    border:10px  solid grey;
+    padding:initial;
+    background-color:hotpink;
+    size:60%;
+}
+
+#left-image{
+    border-radius: 50%;
+    float: left;
+   width: fit-content;
+   padding: 10px;
+}
+
+#center-image{
+    border-radius: 50%;
+    float: center;
+   width:fit-content;
+   padding: 10px;
+}
+
+#right-image{
+    border-radius: 50%;
+    float: right;
+   width: fit-content;
+   padding: 10px;
+}
+
+h4{
+    font-family: 'Courier New', monospace;
+    font-weight: bolder;
+    font-style: oblique;
+    color: mediumvioletred;
+    text-align: center;
+    padding-top: 10S;
+}
