@@ -88,16 +88,23 @@ function handleUserClick(event){
         renderThreeImages();
     }
     else{
-        let list=document.getElementById('list-result');
-        let productResult;
-        for(let i=0; i<Catalog.allProducts.length; i++){
-            productResult=document.createElement('li');
-            list.appendChild(productResult);
-            productResult.textContent=Catalog.allProducts[i]. name + 'has' + Catalog.allProducts[i].votesCount + 'votesCount';
-        }
+       
         leftImage.removeEventListener('click', handleUserClick);
         centerImage.removeEventListener('click',handleUserClick);
         rightImage.removeEventListener('click', handleUserClick);
 
         }
     }
+let ResultBtn=document.getElementById('ResultButton');
+ResultBtn.addEventListener('click', renderResult);
+
+function renderResult(){
+    let list=document.getElementById('list-result');
+    let productResult;
+    for(let i=0; i<Catalog.allProducts.length; i++){
+        productResult=document.createElement('li');
+        list.appendChild(productResult);
+        productResult.textContent=Catalog.allProducts[i]. name + 'has' + Catalog.allProducts[i].votesCount + 'votesCount';
+    }
+
+}
