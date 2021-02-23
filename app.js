@@ -174,13 +174,13 @@ function viewChart() {
             label: 'product Names',
             backgroundColor: 'cyan',
             borderColor: 'cyan',
-            data: productNames
+            data: productVotes
           },
-  
+        
           {
             label: 'product Shown',
-            backgroundColor: 'grey',
-            borderColor: 'grey',
+            backgroundColor: 'black',
+            borderColor: 'black',
             data: productShown
           },
   
